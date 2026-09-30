@@ -21,3 +21,14 @@ System.Console.WriteLine($"Name on badge: {firstName.ToUpper()} {lastName.ToUppe
 System.Console.WriteLine($"Username: {studentUsername.ToLower()}");
 System.Console.WriteLine($"Initials: {firstNameInitials.ToUpper()}.{lastNameInitials.ToUpper()}.");
 System.Console.WriteLine($"Letters in last name: {lastName.Length}");
+
+//randomly gen. the locker num and studentID
+Random numberGeneration = new Random();
+
+int studentLockerNumber;
+int studentID;
+
+studentLockerNumber = numberGeneration.Next(1, 501);
+studentID = numberGeneration.Next(100000, 909999);
+System.Console.WriteLine($"Student ID: {studentID}");
+System.Console.WriteLine($"Locker: {studentLockerNumber}");
